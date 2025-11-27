@@ -1,6 +1,8 @@
 package com.example.pokemonwatchlist;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -20,6 +22,8 @@ public class PokemonProfile extends AppCompatActivity {
     private TextView pokemonIdTv;
    private TextView pokemonBaseExpTv;
    private ImageView pokemonImg;
+   private Button backBtn;
+
 
 
 
@@ -37,6 +41,11 @@ public class PokemonProfile extends AppCompatActivity {
         pokemonIdTv = findViewById(R.id.pokemonId);
         pokemonBaseExpTv = findViewById(R.id.baseExp);
         pokemonImg = findViewById(R.id.pokemonSprite);
+        backBtn = findViewById(R.id.backBtn);
+        
+        backBtn.setOnClickListener(v -> finish());
+
+
 
         if (pokemon != null) {
             pokemonNameTv.setText(pokemon.getName());

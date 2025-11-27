@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PokemonWatchlist</string>
+    <string name="watchListHeader">Watchlist</string>
+    <string name="addPokemonLabel">Add Pokemon</string>
+</resources>
